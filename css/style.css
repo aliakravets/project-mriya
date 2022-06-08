@@ -1,0 +1,722 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 800px 1fr;
+      grid-template-rows: 800px 1fr;
+}
+
+.container header {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100px 2fr;
+      grid-template-rows: 100px 2fr;
+      grid-template-areas: "nav photo" "text photo";
+  gap: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.container header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.container header nav ul li a {
+  font-family: 'Jura';
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #006AA7;
+}
+
+.container header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container header .header-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.container header .header-text h1 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 118px;
+  color: #000000;
+}
+
+.container header .header-text h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #000000;
+}
+
+.container header .header-text p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  line-height: 19px;
+}
+
+.container header .header-text .after-button {
+  margin-bottom: 40px;
+}
+
+.container header .header-text .button-text {
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 250px;
+  height: 50px;
+  background: #006AA7;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px 55px;
+}
+
+.container header .header-text .button-text:hover {
+  background: #024D79;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container header img {
+  border-radius: 0px 0px 268px 268px;
+}
+
+.container main .people {
+  background: #F5F5F5;
+  padding: 20px;
+}
+
+.container main .people .people-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container main .people .people-text p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container main .people .people-text h1 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.container main .people ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.container main .people ul li {
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+.container main .people ul li:hover {
+  background: #006AA7;
+  color: white;
+}
+
+.container main .people ul li h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px 0;
+}
+
+.container main .people ul li p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.container main .people ul li .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .people ul li .next p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 10px;
+}
+
+.container main .kozactvo {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container main .kozactvo h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.container main .kozactvo ul {
+  text-align-last: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.container main .kozactvo ul .kozak {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 100px;
+      grid-template-columns: 2fr 100px;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas: "text photo" "text-p photo";
+  background: #006AA7;
+  color: #FFFFFF;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  border-radius: 5px;
+}
+
+.container main .kozactvo ul .kozak h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.container main .kozactvo ul .kozak p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text-p;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+}
+
+.container main .kozactvo ul .kozak img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: photo;
+}
+
+.container main .kozactvo ul .values {
+  padding: 20px;
+  text-align: left;
+  background: #F5F5F5;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+
+.container main .kozactvo ul .values h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.container main .kozactvo ul .values p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.container main .kozactvo ul .courage {
+  padding: 20px;
+  text-align: left;
+  background: #F5F5F5;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+
+.container main .kozactvo ul .courage h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.container main .kozactvo ul .courage p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.container main .sky {
+  background: #F9C00D;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container main .sky h2 {
+  text-align: center;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.container main .sky .text-with-photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.container main .sky .text-with-photo .text p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.container main .sky .text-with-photo .text a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: #F9C00D;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.container main .sky .text-with-photo .text a:hover {
+  background: #BD930A;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.container main .who-we-today {
+  padding: 20px;
+  text-align: center;
+}
+
+.container main .who-we-today p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container main .who-we-today h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.container main .who-we-today ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.container main .who-we-today ul li {
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+}
+
+.container main .we-live {
+  padding: 20px;
+}
+
+.container main .we-live h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.container main .we-live ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.container main .we-live ul li {
+  border: 1px solid white;
+}
+
+.container main .zelenskiy-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container main .zelenskiy-block .zelenskiy {
+  width: 800px;
+  background: #006AA7;
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .zelenskiy-block .zelenskiy p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.container main .zelenskiy-block .zelenskiy img {
+  border-radius: 100%;
+}
+
+.container main .didthutalization h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: #000000;
+  text-align: center;
+}
+
+.container main .didthutalization p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container main .didthutalization ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  list-style-type: none;
+  gap: 10px;
+  padding: 20px;
+}
+
+.container main .didthutalization ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background: #F9C00D;
+}
+
+.container main .didthutalization ul li p {
+  text-align: left;
+}
+
+.container main .future {
+  padding: 20px;
+  background: #E5E5E5;
+}
+
+.container main .future .future-ukraine {
+  margin-bottom: 20px;
+}
+
+.container main .future .future-ukraine p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.container main .future .future-ukraine h2 {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container main .future .future-ukraine .columns {
+  display: -ms-grid;
+  display: grid;
+  list-style-type: none;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.container main .future .future-ukraine .columns li {
+  background: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.container main .future .future-ukraine .columns li p {
+  text-align: left;
+}
+
+.container main .future .future-ukraine .columns li:hover {
+  background: #006aa7;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.container main .future .future-ukraine .columns-2 {
+  display: -ms-grid;
+  display: grid;
+  list-style-type: none;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.container main .future .future-ukraine .columns-2 li {
+  background: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.container main .future .future-ukraine .columns-2 li p {
+  text-align: left;
+}
+
+.container main .future .future-ukraine .columns-2 li:hover {
+  background: #006aa7;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.container main .future .we-are-nation {
+  margin-bottom: 20px;
+}
+
+.container main .future .we-are-nation p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container main .future .we-are-nation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.container main .future .ukrainen {
+  margin-bottom: 20px;
+}
+
+.container main .future .ukrainen p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container main .future .ukrainen ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-template: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.container main .future .ukrainen ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #FFFFFF;
+}
+
+.container main .future .ukrainen ul li p {
+  text-align: left;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container main .future .ukrainen ul li img {
+  border-radius: 100%;
+}
+/*# sourceMappingURL=style.css.map */
